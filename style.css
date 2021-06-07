@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background: black;
+}
+div{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    background: orange;
+    box-shadow: 0 0 10px white,
+    0 0 20px white,
+    0 0 30px orange,
+    0 0 40px orange,
+    0 0 50px orange;
+}
+.circle1{
+    top: 120px;
+    right: 60px;
+    animation: animationCircle1 5s infinite;
+}
+.circle2{
+    top: 60px;
+    animation: animationCircle2 5s infinite;
+}
+.circle3{
+    left: 60px;
+    animation: animationCircle3 5s infinite;
+}
+.circle4{
+    left: 60px;
+    animation: animationCircle4 5s infinite;
+}
+.circle5{
+    left: 60px;
+    animation: animationCircle5 5s infinite;
+}
+.circle6{
+    bottom: 60px;
+    animation: animationCircle6 5s infinite;
+}
+.circle7{
+    right: 60px;
+    bottom: 120px;
+    animation: animationCircle7 5s infinite;
+}
+@keyframes animationCircle1{
+    75%{right: 60px;}
+    87.5%{right: 0px;}
+    100%{right: 0px;}
+}
+@keyframes animationCircle2{
+    62.5%{left: 0px;}
+    75%{left: 60px;}
+    100%{left: 60px;}
+}
+@keyframes animationCircle3{
+    50%{top: 0px;}
+    62.5%{top: 60px;}
+    100%{top: 60px;}
+}
+@keyframes animationCircle4{
+    37.5%{top: 0px;}
+    50%{top: 60px;}
+    100%{top: 60px;}
+}
+@keyframes animationCircle5{
+    25%{left: 60px;}
+    37.5%{left: 0px;}
+    100%{left: 0px;}
+}
+@keyframes animationCircle6{
+    12.5%{right: 0px;}
+    25%{right: 60px;}
+    100%{right: 60px;}
+}
+@keyframes animationCircle7{
+    0%{bottom: 120px;}
+    12.5%{bottom: 180px;}
+    87.5%{bottom: 180px;}
+    100%{bottom: 240px;}
+}
